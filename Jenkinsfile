@@ -4,27 +4,26 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                // Récupère le code depuis votre dépôt GitHub
                 checkout scm
             }
         }
         
-        stage('Build') {
+        stage('Build & Verif Java') {
             steps {
-                echo 'Étape de compilation du projet Java/Hibernate...'
-                // Nous ajouterons plus tard votre commande de build (ex: Maven, Ant ou javac)
+                // Vérifie la version de Java directement sur votre PC Windows via Jenkins
+                bat 'java --version'
             }
         }
         
         stage('Test') {
             steps {
-                echo 'Étape des tests...'
+                echo 'Tests du projet en cours...'
             }
         }
         
         stage('Deploy') {
             steps {
-                echo 'Déploiement de l\'application...'
+                echo 'Simulation du déploiement réussie !'
             }
         }
     }
