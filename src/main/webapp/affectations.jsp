@@ -371,7 +371,7 @@
     </nav>
 
     <div class="container my-4">
-        <p class="pm-subtitle">Associez vos employ&eacute;s aux lieux et veuillez suivre chaque affectation avec clart&eacute;.</p>
+        <p class="pm-subtitle">Associez vos employ&eacute;s aux lieux et seraphin chaque affectation avec clart&eacute;.</p>
 
         <div class="row g-4">
             <div class="col-lg-4">
