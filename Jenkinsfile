@@ -10,14 +10,14 @@ pipeline {
         
         stage('Build & Verif Java') {
             steps {
-                // Vérifie la version de Java directement sur votre PC Windows via Jenkins
                 bat 'java --version'
             }
         }
         
         stage('Test') {
             steps {
-                echo 'Tests du projet en cours...'
+                // Exécute automatiquement JUnit via Maven dans Jenkins
+                bat 'mvn test'
             }
         }
         
