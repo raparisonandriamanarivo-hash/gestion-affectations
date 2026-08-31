@@ -8,18 +8,11 @@ pipeline {
             }
         }
         
-        stage('Build & Verif Java') {
+        stage('Build & Test') {
             steps {
                 bat 'java --version'
-                // Compilation du projet et génération du fichier .war via Maven
-                bat 'mvn clean package -DskipTests'
-            }
-        }
-        
-        stage('Test') {
-            steps {
-                // Exécute automatiquement JUnit via Maven dans Jenkins
-                bat 'mvn test'
+                // Compile et exécute les tests unitaires JUnit en une seule passe
+                bat 'mvn clean package'
             }
         }
         
