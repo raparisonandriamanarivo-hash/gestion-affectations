@@ -385,7 +385,7 @@
     </nav>
 
     <div class="container my-4">
-        <p class="pm-subtitle">Gérez, consultez et mettez à jour votre équipe instantanément..</p>
+        <p class="pm-subtitle"> consultez et mettez à jour votre équipe instantanément..</p>
 
         <div class="row g-4">
 
