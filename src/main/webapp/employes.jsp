@@ -385,7 +385,7 @@
     </nav>
 
     <div class="container my-4">
-        <p class="pm-subtitle">Ajoutez, modifiez et retrouvez vos collaborateurs en un clin d'&oelig;il.</p>
+        <p class="pm-subtitle">Gérez, consultez et mettez à jour votre équipe instantanément..</p>
 
         <div class="row g-4">
 
