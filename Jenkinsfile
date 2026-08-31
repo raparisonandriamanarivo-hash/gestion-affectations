@@ -11,6 +11,8 @@ pipeline {
         stage('Build & Verif Java') {
             steps {
                 bat 'java --version'
+                // Compilation du projet et génération du fichier .war via Maven
+                bat 'mvn clean package -DskipTests'
             }
         }
         
@@ -23,7 +25,8 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                echo 'Simulation du déploiement réussie !'
+                // Copie directe du fichier .war généré vers le répertoire webapps de Tomcat sous Windows
+                bat 'copy target\\gestion-affectations.war "C:\\apache-tomcat-9.0.120\\webapps\\"'
             }
         }
     }
